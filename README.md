@@ -11,9 +11,11 @@ Site institucional desenvolvido para apresentar informações, atividades e proj
 - `quem-somos.html` — Quem somos
 
 ## Tecnologias
+HTML5
 
-- HTML
+CSS3
 
+JavaScript
 ## Como visualizar
 
 Abra o arquivo `index.html` em seu navegador.
