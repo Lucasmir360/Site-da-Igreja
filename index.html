@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IEADB Vila Esperança</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9a66f41.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+
+      /* 🎨 FUNDO PADRÃO */
+      background: linear-gradient(
+        90deg,
+        #91670A 0%,
+        #FFDEDE 50%,
+        #FF8400 100%
+      );
+
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      animation: fadeInPage 1.5s ease-in-out forwards;
+    }
+
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem 1rem;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    header h1:hover,
+    header h1.clicked {
+      color: #000;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    /* 🔥 MENU IGUAL AO QUEM SOMOS */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      padding: 1rem 0;
+      animation: fadeIn 1.5s ease 0.5s forwards;
+    }
+
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #000;
+      transform: scale(1.1);
+    }
+
+    .call-to-action {
+      margin: 2rem auto;
+      background-color: rgba(255, 255, 255, 0.35);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 600px;
+      animation: fadeIn 1.5s ease 1s forwards;
+    }
+
+    .call-to-action h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .call-to-action button {
+      margin-top: 1rem;
+      background-color: #91670A;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .sobre-nos {
+      background-color: rgba(255, 255, 255, 0.35);
+      border-radius: 16px;
+      padding: 2rem;
+      max-width: 850px;
+      margin: 3rem auto;
+      text-align: justify;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      animation: fadeIn 1.5s ease 1.5s forwards;
+    }
+
+    .sobre-nos h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .sobre-nos h2:hover {
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin-top: auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInPage {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* 📱 MOBILE */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .sobre-nos {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1 onclick="changeColor('header')">
+      <i class="fas fa-church"></i> IEADB Vila Esperança
+    </h1>
+    <p>Uma igreja para todos — onde o amor de Cristo é vivido 💖</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="quem-somos.html">Quem somos</a>
+    <a href="cultos-eventos.html">Cultos e Eventos</a>
+    <a href="destaques.html">Destaques</a>
+    <a href="projetos-sociais.html">Projetos Sociais</a>
+  </nav>
+
+  <section class="call-to-action">
+    <h2>Próximo Culto: Domingo às 19:30 horas</h2>
+    <p>Participe conosco e sinta o poder da presença de Deus!</p>
+    <button onclick="window.location.href='cultos-eventos.html'">Saiba mais</button>
+  </section>
+
+  <section class="sobre-nos">
+    <h2>Sobre Nós</h2>
+    <p>
+      Somos a IEADB Vila Esperança, uma igreja comprometida em viver e anunciar
+      o evangelho de Jesus Cristo, acolhendo vidas e fortalecendo a fé.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 IEADB Vila Esperança. Todos os direitos reservados.</p>
+    <p><i class="fas fa-map-marker-alt"></i> Rua Joana Maria de Jesus, 13 - Uberaba MG</p>
+  </footer>
+
+  <script>
+    function changeColor(section) {
+      document.querySelector("header h1").classList.add("clicked");
+    }
+  </script>
+
+</body>
+</html>

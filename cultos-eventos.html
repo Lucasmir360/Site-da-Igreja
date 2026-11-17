@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultos e Eventos</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+
+            /* 🎨 FUNDO PADRÃO */
+            background: linear-gradient(
+                90deg,
+                rgba(145, 103, 10, 1) 0%,
+                rgba(255, 222, 222, 1) 50%,
+                rgba(255, 132, 0, 1) 100%
+            );
+
+            color: #000;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header {
+            padding: 2.5rem 1rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.7rem;
+            font-weight: 700;
+        }
+
+        /* 🔥 MENU PADRÃO (IGUAL AO INDEX) */
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            padding: 1rem 0;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+        }
+
+        /* 📦 CARD */
+        .container {
+            background: rgba(255, 255, 255, 0.35);
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .culto {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+
+        .horario {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .local {
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        hr {
+            width: 50%;
+            border: 1px solid #000;
+            margin: 15px auto;
+            opacity: 0.3;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 📱 MOBILE */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>IEADB Vila Esperança</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="quem-somos.html">Quem somos</a>
+        <a href="cultos-eventos.html">Cultos e Eventos</a>
+        <a href="destaques.html">Destaques</a>
+        <a href="projetos-sociais.html">Projetos Sociais</a>
+    </nav>
+
+    <div class="container">
+        <h2>Cultos e Eventos</h2>
+
+        <p class="culto">Segunda-feira</p>
+        <p class="horario">Círculo de Oração - 19:30</p>
+        <hr>
+
+        <p class="culto">Terça-feira</p>
+        <p class="horario">Culto de Ensino - 19:30</p>
+        <p class="local">Av. José Valim de Melo, 2309 - Chica Ferreira</p>
+        <hr>
+
+        <p class="culto">Quinta-feira</p>
+        <p class="horario">Culto - 19:30</p>
+        <hr>
+
+        <p class="culto">Domingo</p>
+        <p class="horario">Escola Bíblica Dominical - 08:30</p>
+        <p class="horario">Culto da Família - 19:30</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destaques - IEADB Vila Esperança</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+
+      /* 🎨 FUNDO PADRÃO */
+      background: linear-gradient(
+        90deg,
+        rgba(145, 103, 10, 1) 0%,
+        rgba(255, 222, 222, 1) 50%,
+        rgba(255, 132, 0, 1) 100%
+      );
+
+      color: #000;
+      text-align: center;
+      animation: fadeInPage 1.5s ease-in-out forwards;
+    }
+
+    header {
+      padding: 2.5rem 1rem 1rem;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+      font-weight: 700;
+    }
+
+    /* 🔥 MENU PADRÃO */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      padding: 1rem 0;
+      animation: fadeIn 1.2s ease 0.5s forwards;
+    }
+
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      transform: scale(1.1);
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeIn 1.2s ease 0.7s forwards;
+    }
+
+    main h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .destaques-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.35);
+      border-radius: 12px;
+      padding: 1.5rem;
+      width: 280px;
+      text-align: left;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      animation: fadeInCard 1s ease-in-out forwards;
+      opacity: 0;
+      color: #000;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      line-height: 1.4;
+    }
+
+    .btn-ver-mais {
+      display: inline-block;
+      margin-top: 3rem;
+      padding: 12px 25px;
+      background-color: #91670A;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-ver-mais:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInPage {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInCard {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* 📱 MOBILE */
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>IEADB Vila Esperança</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="quem-somos.html">Quem somos</a>
+    <a href="cultos-eventos.html">Cultos e Eventos</a>
+    <a href="destaques.html">Destaques</a>
+    <a href="projetos-sociais.html">Projetos Sociais</a>
+  </nav>
+
+  <main>
+    <h2>✨ Destaques da Semana</h2>
+
+    <div class="destaques-container">
+
+      <div class="card">
+        <h3>📖 Culto da Família</h3>
+        <p>Domingos às 19:30h - Venha cultuar conosco e fortalecer sua fé.</p>
+      </div>
+
+      <div class="card">
+        <h3>🙏 Círculo de Oração</h3>
+        <p>Segunda-feira às 19:30h - Um momento especial de oração e comunhão.</p>
+      </div>
+
+      <div class="card">
+        <h3>📚 Culto de Ensino</h3>
+        <p>Terça-feira às 19:30h - Aprendizado profundo da Palavra de Deus.</p>
+      </div>
+
+    </div>
+
+    <a href="cultos-eventos.html" class="btn-ver-mais">Ver todos os cultos</a>
+  </main>
+
+  <footer>
+    <p>© 2025 IEADB Vila Esperança. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

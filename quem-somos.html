@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IEADB Vila Esperança</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+
+      /* 🔥 MESMO FUNDO DO INDEX */
+      background: linear-gradient(
+        90deg,
+        #91670A 0%,
+        #FFDEDE 50%,
+        #FF8400 100%
+      );
+
+      color: #000;
+      animation: fadeInPage 1.5s ease-in-out forwards;
+    }
+
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem 1rem;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    header h1:hover {
+      color: #000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      padding: 1rem 0;
+      animation: fadeIn 1.5s ease 0.5s forwards;
+    }
+
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #000;
+      transform: scale(1.1);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      background-color: rgba(255, 255, 255, 0.35);
+      border-radius: 20px;
+      padding: 2.5rem;
+      animation: fadeIn 1.5s ease 1s forwards;
+    }
+
+    h2, h3 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #000;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: rgba(255,255,255,0.6);
+      margin-bottom: 12px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    ul li span {
+      font-weight: 700;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #000;
+      margin-top: 3rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInPage {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* 📱 MOBILE */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      main {
+        margin: 2rem 1rem;
+        padding: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>IEADB Vila Esperança</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="quem-somos.html">Quem Somos</a>
+    <a href="cultos-eventos.html">Cultos e Eventos</a>
+    <a href="destaques.html">Destaques</a>
+    <a href="projetos-sociais.html">Projetos Sociais</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Quem Somos</h2>
+      <p>
+        Somos a IEADB Vila Esperança, uma igreja cristã dedicada a viver e anunciar
+        o evangelho de Jesus Cristo. Nosso desejo é acolher, cuidar e caminhar juntos
+        como uma família na fé.
+      </p>
+    </section>
+
+    <section>
+      <h3>Missão</h3>
+      <p>
+        Levar o amor de Cristo a todas as pessoas, servindo a Deus e ao próximo
+        com fé, compromisso e dedicação.
+      </p>
+    </section>
+
+    <section>
+      <h3>Visão</h3>
+      <p>
+        Ser uma igreja relevante, unida e cheia da presença de Deus,
+        impactando vidas e transformando nossa comunidade.
+      </p>
+    </section>
+
+    <section>
+      <h3>Valores</h3>
+      <ul>
+        <li><span>Amor:</span> Vivemos o amor que Cristo nos ensinou.</li>
+        <li><span>Fé:</span> Confiamos plenamente em Deus.</li>
+        <li><span>Comunhão:</span> Caminhamos juntos como família.</li>
+        <li><span>Serviço:</span> Servimos ao próximo com alegria.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 IEADB Vila Esperança. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

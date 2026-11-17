@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projetos Sociais</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+
+            /* 🎨 FUNDO PADRÃO */
+            background: linear-gradient(
+                90deg,
+                rgba(145, 103, 10, 1) 0%,
+                rgba(255, 222, 222, 1) 50%,
+                rgba(255, 132, 0, 1) 100%
+            );
+
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            animation: fadeInPage 1.2s ease-in-out forwards;
+        }
+
+        header {
+            padding: 2.5rem 1rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.7rem;
+            font-weight: 700;
+        }
+
+        /* 🔥 MENU PADRÃO */
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            padding: 1rem 0;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+        }
+
+        /* 📦 CONTAINER */
+        .container {
+            margin: auto;
+            background: rgba(255, 255, 255, 0.35);
+            border-radius: 20px;
+            padding: 40px 30px;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 50px;
+            background-color: #91670A;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeInPage {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* 📱 MOBILE */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>IEADB Vila Esperança</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="quem-somos.html">Quem somos</a>
+        <a href="cultos-eventos.html">Cultos e Eventos</a>
+        <a href="destaques.html">Destaques</a>
+        <a href="projetos-sociais.html">Projetos Sociais</a>
+    </nav>
+
+    <div class="container">
+        <span class="badge">Em construção</span>
+        <h1>Projetos Sociais</h1>
+
+        <p>
+            Estamos preparando este espaço com muito carinho para compartilhar
+            nossos projetos sociais e ações que impactam vidas.
+            Em breve você verá tudo por aqui 🙌
+        </p>
+    </div>
+
+    <footer>
+        <p>© 2025 IEADB Vila Esperança. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
